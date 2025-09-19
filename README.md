@@ -1,4 +1,4 @@
-<img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/6349dadb-8951-42a5-b04d-c647e336df1f" />📝 To-Do Web App
+📝 To-Do Web App
 
 A simple Kanban-style To-Do application built with HTML, CSS, and JavaScript.
 This app allows users to create, edit, delete, and drag & drop tasks between To-Do, Working, and Done columns. All tasks are saved in LocalStorage so they persist after refreshing the page.
