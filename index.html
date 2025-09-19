@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <h1>To - Do</h1>
+        <button type="button" class="taksCreator btn btn-outline-success">Create New Task</button>
+    </nav>
+    <main>
+        <div id="container">
+            <!-- TO-Do Coloum -->
+            <div class="colm toDoColm">
+                <div class="colmInfo toDoColmOInfo">
+                    <h2>To-Do</h2>
+                    <i class="taksCreator fa-solid fa-plus"></i>
+                </div>
+                <hr>
+                <!-- To Do Task's List   -->
+                <div class="tasksList" id="toDoTasksList">
+                    <!-- New Task Template   -->
+                    <div class="task taskTemplate" draggable="true" style="display: none;">
+                        <div class="taskInfo">
+                            <span>
+                                <small>Status</small>
+                                <b>To-Do</b>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-trash dltTrash"></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="taskDetails">
+                            <input placeholder="Heading" value=""> <br>
+                            <textarea placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Working Coloum -->
+            <div class="colm WorkingColm">
+                <div class="colmInfo">
+                    <h2>Working</h2>
+                </div>
+                <hr>
+                <!-- Working Task's List   -->
+                <div class="tasksList" id="WorkingTasksList">
+
+                </div>
+            </div>
+
+            <!-- Done Coloum -->
+            <div class="colm DoneColm">
+                <div class="colmInfo">
+                    <h2>Done</h2>
+                </div>
+                <hr>
+                <!-- Done Task's List   -->
+                <div class="tasksList" id="DoneTasksList">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

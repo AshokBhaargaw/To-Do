@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background: #000; */
+}
+
+nav>h1 {
+    text-align: center;
+    margin: 0 auto;
+    color: brown;
+    display: inline-block;
+}
+
+nav>button {
+    height: auto;
+    margin: 10px 20px;
+}
+
+#container {
+    background: rgba(0, 0, 0, 0.09);
+    width: 85%;
+    min-height: 500px;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+    gap: 10px;
+}
+
+.colm {
+    width: 100%;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+.colm .colmInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.colm .colmInfo i,
+.task .taskInfo span i {
+    color: #555;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.colm .colmInfo i:hover,
+.task .taskInfo span i:hover {
+    color: black;
+}
+
+.colm>hr {
+    margin-bottom: 10px;
+}
+
+.colm:nth-child(1) {
+    background: #ffd3d3;
+}
+
+.colm:nth-child(2) {
+    background: #feffd2;
+}
+
+.colm:nth-child(3) {
+    background: #d3ffd3;
+}
+
+
+.tasksList {
+    min-height: 100%;
+
+}
+
+.dragover {
+  border: 2px dashed #333;
+  background: rgba(0,0,0,0.05);
+}
+
+
+.task {
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.task .taskInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.task .taskDetails {
+    padding: 10px 5px;
+}
+
+.task input {
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    color: black;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.task input:focus {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.task textarea {
+    color: #444;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    resize: none;
+    padding-left: 5px;
+    height: 4em;
+}
+.task textarea:focus {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+
+textarea::-webkit-scrollbar-thumb {
+    background: #888;
+    cursor: pointer;
+    border-radius: 10px;
+}
