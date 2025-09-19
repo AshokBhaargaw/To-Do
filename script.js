@@ -29,6 +29,7 @@ document.addEventListener("click", (e) => {
     if (e.target.matches(".dltTrash")) {
         const taskToDlt = e.target.closest(".task");
         taskToDlt.remove();
+        saveTask();
     }
 });
 
